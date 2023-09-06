@@ -10,7 +10,7 @@ import java.util.*;
          ll.add(l);
 
      }
-    public void set(int r,int c,int v){
+  public void set(int r,int c,int v){
         LinkedList<Integer> l=new LinkedList<>(List.of(r,c,v));
          if(ll.size()<2){
              ll.add(l);
@@ -18,6 +18,7 @@ import java.util.*;
          }
          else{
             int i=1;
+
             while(i<ll.size()){
                 if(ll.get(i).get(0)>r){
                     ll.add(i,l);
@@ -30,7 +31,15 @@ import java.util.*;
                         ll.get(0).set(2,ll.get(0).get(2)+1);
                         break;
                     }
-
+                    else if(ll.get(i).get(1)<c){
+                        ll.add(l);
+                        ll.get(0).set(2,ll.get(0).get(2)+1);
+                        break;
+                    }
+                    else{
+                        ll.set(i,l);
+                        break;
+                    }
                 }
                 else{
                     i++;
