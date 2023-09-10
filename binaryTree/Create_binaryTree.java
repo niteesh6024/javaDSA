@@ -27,7 +27,7 @@ public class Main {
                 t=new Node(l);
                 q.add(t);
             }
-            System.out.print("enter the left child of "+ p.val);
+            System.out.print("enter the right child of "+ p.val);
             int r=sc.nextInt();
             if(r!=-1){
                 t=new Node(r);
