@@ -3,7 +3,7 @@ bubble sort:
     1. no. of comparions: n(n-1)/2
     2. no. of swaps: n
     3. adaptive(if sorted it will stop): no 
-    4. stable(same elements can be swapped): true
+    4. stable(same elements can be swapped): no
  */
 import java.util.*;
 
