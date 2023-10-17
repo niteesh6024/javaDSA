@@ -1,4 +1,7 @@
-//closed hashing
+/*closed hashing
+linear hashing index =(n%10+k)%10
+quadratic hashing index =(n%10+k*k)%10
+    */
 import java.util.*;
 
 public class Main {
